@@ -13,7 +13,9 @@ public class calculadora {
 		Scanner kb= new Scanner(System.in);
 		int num1= pedirNumero(kb);
 		int num2= pedirNumero(kb);
-		int opcion= elegirOpcion();
+		int opcion= elegirOpcion(kb);
+		
+		operacion(num1, num2, opcion);
 		
 	}
 	
@@ -31,6 +33,31 @@ public class calculadora {
 		}while(num<0);
 		
 		return num;
+	}
+	
+	public int elegirOpcion(Scanner kb) {
+		int opcion=0;
+		
+		do {
+			System.out.println("Elije una opcion entre 1 y 4");
+			opcion= kb.nextInt();
+			
+			if(opcion <1 || opcion >4) {
+				System.out.println("ERROR");
+			}
+			
+		}while(opcion <1 || opcion >4);
+		
+		return opcion;
+	}
+	
+	public void operacion(int num1, int num2, int opcion) {
+		
+		switch(opcion) {
+		case 1 -> 
+		}
+		
+		
 	}
 	
 
