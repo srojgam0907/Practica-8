@@ -15,16 +15,18 @@ public class calculadora {
 		
 	}
 
+	// Funcion Suma
 	public int sumar(int num1, int num2){
 
 		return num1 + num2;
 
 	}
 
+	// Funcion Resta
 	public int restar(int num1, int num2){
 
 		return num1 - num2;
-		
+
 	}
 
 }
