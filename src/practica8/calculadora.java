@@ -54,9 +54,12 @@ public class calculadora {
 	public void operacion(int num1, int num2, int opcion) {
 		
 		switch(opcion) {
-		case 1 -> 
+		case 1 -> sumar(num1, num2);
+		case 2 -> restar(num1, num2);
+		case 3 -> multiplicar(num1, num2);
+		case 4 -> dividir(num1, num2);
+
 		}
-		
 		
 	}
 	
