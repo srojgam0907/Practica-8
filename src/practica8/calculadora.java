@@ -1,4 +1,5 @@
 package practica8;
+import java.util.Scanner;
 
 public class calculadora {
 
@@ -9,10 +10,37 @@ public class calculadora {
 	
 	public void show() {
 		//TODO hacer funciones
-		int num1= pedirNumero();
-		int num2= pedirNumero();
+		Scanner kb= new Scanner(System.in);
+		int num1= pedirNumero(kb);
+		int num2= pedirNumero(kb);
 		int opcion= elegirOpcion();
 		
 	}
+	
+	public int pedirNumero(Scanner kb) {
+		int num=0;
+		
+		do {
+			System.out.println("Introduce un numero mayor a cero");
+			num= kb.nextInt();
+			
+			if(num<0) {
+				System.out.println("ERROR");
+			}
+			
+		}while(num<0);
+		
+		return num;
+	}
+	
 
 }
+
+
+
+
+
+
+
+
+
