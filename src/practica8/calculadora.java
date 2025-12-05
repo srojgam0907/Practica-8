@@ -18,6 +18,7 @@ public class calculadora {
 		operacion(num1, num2, opcion);
 		
 	}
+<<<<<<< HEAD
 	
 	public float pedirNumero(Scanner kb) {
 		float num=0;
@@ -61,17 +62,19 @@ public class calculadora {
 			default -> System.out.println("ERROR");
 		}
 	}
-	
-	public float sumar(float num1, float num2){
+
+	// Funcion Suma
+	public int sumar(int num1, int num2){
 
 		return num1 + num2;
 
 	}
 
-	public float restar(float num1, float num2){
+	// Funcion Resta
+	public int restar(int num1, int num2){
 
 		return num1 - num2;
-		
+
 	}
 
 }
