@@ -11,16 +11,16 @@ public class calculadora {
 	public void show() {
 		//TODO hacer funciones
 		Scanner kb= new Scanner(System.in);
-		int num1= pedirNumero(kb);
-		int num2= pedirNumero(kb);
-		int opcion= elegirOpcion(kb);
+		float num1= pedirNumero(kb);
+		float num2= pedirNumero(kb);
+		float opcion= elegirOpcion(kb);
 		
 		operacion(num1, num2, opcion);
 		
 	}
 	
-	public int pedirNumero(Scanner kb) {
-		int num=0;
+	public float pedirNumero(Scanner kb) {
+		float num=0;
 		
 		do {
 			System.out.println("Introduce un numero mayor a cero");
@@ -51,16 +51,15 @@ public class calculadora {
 		return opcion;
 	}
 	
-	public void operacion(int num1, int num2, int opcion) {
+	public void operacion(float num1, float num2, int opcion) {
 		
 		switch(opcion) {
-		case 1 -> sumar(num1, num2);
-		case 2 -> restar(num1, num2);
-		case 3 -> multiplicar(num1, num2);
-		case 4 -> dividir(num1, num2);
-
+			case 1 -> sumar(num1, num2);
+			case 2 -> restar(num1, num2);
+			case 3 -> multiplicar(num1, num2);
+			case 4 -> dividir(num1, num2);
+			default -> System.out.println("ERROR");
 		}
-		
 	}
 	
 
